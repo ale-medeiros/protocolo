@@ -58,6 +58,7 @@
                             return;
                         }
 
+                        
                         document.getElementById("paciente_id").setAttribute("value", data.paciente_id);
                         document.getElementById("nome_paciente").setAttribute("value", data.nome_paciente);
                         document.getElementById("data_nascimento").setAttribute("value", data.data_nascimento);
@@ -66,6 +67,8 @@
                         document.getElementById("email").setAttribute("value", data.email);
                         document.getElementById("telefone").setAttribute("value", data.telefone);
                         document.getElementById("escola").setAttribute("value", data.escola);
+
+                        console.log(data); // Para depuração
                     })
             });
         });
