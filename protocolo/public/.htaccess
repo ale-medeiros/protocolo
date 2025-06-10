@@ -1,0 +1,7 @@
+    RewriteEngine On
+    RewriteBase /protocolo/public/
+
+    # Redireciona tudo que não for um arquivo ou pasta existente para router.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ router.php?rota=$1 [QSA,L]

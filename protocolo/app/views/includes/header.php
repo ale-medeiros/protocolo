@@ -10,5 +10,4 @@
     <title>Protocolos e escalas</title>
 </head>
 <body>
-
-<?php include 'includes/navbar.php'; ?>
+<?php require_once ('C:/wamp64/www/protocolo/app/views/includes/navbar.php'); ?>
